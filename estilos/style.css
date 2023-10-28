@@ -1,0 +1,358 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&family=Lora:ital,wght@0,400;0,600;0,700;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+
+/*  
+    Colors: 
+
+    header-nav: background: rgba(0, 0, 0, 0.20);
+    header-info: background: rgba(18, 18, 18, 0.88);
+    footer: background: #212529;
+
+    <p> color: #FFFFFF;
+    <h2> topics/ color: #495057;
+    <p> topics,p/ color #6C757D;
+    actived( color: #AA1C22 )
+    color: #E5E5E5;
+
+
+
+
+*/
+
+
+
+:root{
+
+    /*Fonts*/
+    --font1: 'lora',verdana,sans-serif;
+    --font2:  'roboto', arial;
+    --font3:  'Spartan', arial;
+
+    /*Backgrounds*/
+    --header-nav: rgba(0, 0, 0, 0.20);
+    --header-info:  rgba(18, 18, 18, 0.88);
+    --footer: #212529;
+
+     /*texts color*/
+    --color1: #495057;
+    --color2: #6C757D;
+    --color3:  #E5E5E5;
+    --coloractived: #AA1C22;
+    
+
+}
+
+* { 
+    margin: 0;
+    padding: 0;
+    font-family: var(--font2);
+   
+}
+
+html, body { 
+    background-color: #F8F9FA;
+}
+
+#header {
+   background: url(../public/images/Image.jpg) no-repeat;
+   background-size:contain;
+    height: auto;
+   height: 600px;
+   
+}
+
+#header .header-navbar { 
+display: flex;
+justify-content: end;
+
+
+padding: 10px;
+background-color: var(--header-nav);
+
+} 
+
+#header .header-navbar .navbar-logo h1{
+
+    font-family: var(--font3);
+    font-size: 20px;
+    font-weight: bold;
+    text-align: start;
+    position: absolute;
+    left: 20px;
+    color: var(--color3);
+}
+
+#header .navbar-item ul {
+  display: flex;
+  padding: 5px;
+}
+
+#header .navbar-item ul li {
+   list-style: none;
+    padding: 10px;
+   
+    font-size: 12px;
+}
+
+#header .navbar-item ul li a, #header .navbar-socials i {
+    text-decoration: none;
+    color: var(--color3);
+    padding-bottom: 5px;
+}
+#header .navbar-item ul li a:hover, #header .navbar-socials i:hover{
+
+    border-bottom: 2px solid rgb(145, 8, 8);
+}
+
+
+#header .navbar-socials i {
+    padding: 10px;
+}
+
+#header .navbar-socials::before{
+    content: '';
+    border-right: 1px solid white;
+}
+
+#header .navbar-socials::after {
+    content: '';
+    border-left: 1px solid white;
+}
+
+/*HEADER BANNER*/
+
+#header .header-banner{
+   margin-top: 180px;
+   padding: 30px;
+   background-color:rgba(18, 18, 18, 0.88);
+   color: white;
+    width: 650px;
+
+}
+
+#header .header-banner .header-banner-box {
+    width:  500px;
+}
+
+#header .header-banner p{
+    margin: 10px;
+    font-size: 12px;
+   
+}
+
+#header .header-banner h2{
+    margin: 10px;
+    font-size: 32px;
+    
+}
+
+#header .header-banner p.topic{
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.15);
+    display: inline;
+    padding: 5px;
+    font-size: 10px;
+}
+
+#header .header-banner .subtopic{
+    display: flex;
+
+}
+
+/*Topics*/
+
+#main-topics{
+    width: 100%;
+    margin: auto;
+   
+}
+
+#main-topics .main-topics-tittle h2{
+    margin: 0 40px;
+    color: var(--color1);
+    font-family: var(--font1);
+    font-size: 32px;
+}
+
+#main-topics .main-navbar ul{
+    display: flex;
+    list-style: none;
+    margin: 10px 40px;
+  
+    font-weight: bold;
+}
+
+#main-topics .main-navbar ul a{
+    text-decoration: none;
+    color: var(--color1);
+}
+
+#main-topics .main-navbar ul a:hover {
+    color: var(--coloractived);
+}
+
+#main-topics .main-navbar ul a:active {
+    color: var(--coloractived);
+}
+
+#main-topics .main-navbar ul li{
+    padding: 10px 0;
+    margin-right: 30px;
+    font-size: 12px;
+}
+
+#main-topics .main-navbar ul li:last-child{
+    margin-left: auto;
+}
+
+#main-topics .main-navbar ul li a:active{
+    color: var(--coloractived);
+}
+
+#main-topics .news-topics {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px;
+   
+}
+
+#main-topics .news-topics .main-item{
+   background-color: white;
+   width: 310px;
+   height: 565px;
+    
+}
+
+#main-topics .news-topics .main-item  p, #main-topics .news-topics .main-item  output{
+    font-size: 12px;
+    color: var(--color2);
+    padding: 10px;
+}
+
+
+#main-topics .news-topics .main-item  h3{
+    color: var(--color1);
+    padding: 10px;
+}
+
+#main-topics .news-topics .main-item .main-item-perfil{
+    margin: 40px 10px;
+    display: flex;
+}
+
+#main-topics .news-topics .main-item .main-item-perfil span {
+    font-weight: bold;
+}
+
+#main-topics .news-topics .main-item  .border{
+    display: block;
+    margin: auto;
+    width:  90%;
+    border-top: 1px solid #6c757d42;
+    
+}
+
+
+
+
+/* PRE FOOTER BANNER */
+
+#pre-footer{
+    background: url(../public/images/Image\ \(1\).png);
+    height: 600px;
+    margin-top: 50px;
+}
+
+#pre-footer .pre-footer-info {
+    display: block;
+    position: relative;
+    margin: auto;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+
+    color: #ffffff;
+    text-align: center;
+  
+}
+
+#pre-footer .pre-footer-info h1{
+   font-size: 36px;
+   width: 530px;
+   margin: auto;
+  
+}
+
+#pre-footer .pre-footer-info p{
+    font-size: 12px;
+    width: 530px;
+    margin: auto;
+   
+    padding: 20px;
+    color: var(--color2);
+ }
+
+ #pre-footer .pre-footer-info .border-footer {
+    width: 40px;
+    margin: auto;
+    border-top: 1px solid white;
+    padding: 5px;
+ }
+
+ #pre-footer .pre-footer.info output {
+    font-size: 12px;
+   
+
+ }
+
+ /*Footer*/
+
+ #footer {
+    background-color: #212529;
+    justify-content: space-between;
+    color: #ffffff;
+    display: flex;
+    padding: 60px;
+ }
+
+ #footer h3{
+    font-size: 18px;
+    font-family: var(--font1);
+    font-weight: 700;
+    color: #E5E5E5;
+ }
+
+ #footer ul { 
+    list-style: none;
+
+ }
+
+ #footer ul li {
+    margin: 10px;
+ }
+
+ #footer ul li a {
+    font-size: 12px;  
+    font-family: var(--font1);
+    text-decoration: none;
+    color: #E5E5E5;
+ }
+
+ #footer ul li a:hover{
+    color: #AA1C22;
+ }
+
+ #footer i {
+    color: #E5E5E5;
+    margin: 10px;
+ }
+
+ #footer i:hover {
+    color: #AA1C22;
+    
+ }
