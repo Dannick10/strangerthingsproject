@@ -56,6 +56,9 @@
 
 html, body { 
     background-color: #F8F9FA;
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
 }
 
 #header {
