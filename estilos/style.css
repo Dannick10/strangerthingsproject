@@ -45,6 +45,11 @@
 
 }
 
+::-webkit-scrollbar{
+    width: 0;
+    height: 0;
+}
+
 * { 
     margin: 0;
     padding: 0;
@@ -72,11 +77,14 @@ html, body {
 #header .header-navbar { 
 display: flex;
 justify-content: end;
+position: absolute;
+width: 100vw;
+z-index: 1;
 
 
-padding: 10px;
+
+padding: 10px 0;
 background-color: var(--header-nav);
-margin-bottom: 10em;
 } 
 
 #header .header-navbar .navbar-logo h1{
@@ -94,6 +102,7 @@ margin-bottom: 10em;
     color: white;
     font-size: 1.4em;
     display: none;
+   
 }
 
 #header .navbar-item ul {
@@ -121,6 +130,7 @@ margin-bottom: 10em;
 
 #header .navbar-socials i {
     padding: 10px;
+   
 }
 
 #header .navbar-socials::before{
@@ -135,16 +145,23 @@ margin-bottom: 10em;
 
 /*HEADER BANNER*/
 
+article.header-banner{
+   position: relative;
+   top: 58%;
+
+}
+
 #header .header-banner{
-   padding: 30px;
+  
    background-color:rgba(18, 18, 18, 0.88);
    color: white;
     width: 650px;
-
+    
 }
 
 #header .header-banner .header-banner-box {
     width:  500px;
+   
 }
 
 #header .header-banner p{
@@ -278,6 +295,7 @@ margin-bottom: 10em;
     margin-top: 50px;
     background-color: rgba(0, 0, 0, 0.3);
    background-blend-mode: color;
+   
 }
 
 #pre-footer .pre-footer-info {
