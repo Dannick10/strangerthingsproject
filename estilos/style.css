@@ -71,8 +71,8 @@ html, body {
     height: auto;
    height: 600px;
    background-color: rgba(0, 0, 0, 0.2);
-   background-blend-mode: color;
-   
+  
+
 }
 
 #header .header-navbar { 
@@ -195,7 +195,7 @@ article.header-banner{
 #main-topics{
     width: 100%;
     margin: auto;
-   
+    margin-top: 2.1em;
 }
 
 #main-topics .main-topics-tittle h2{
@@ -253,7 +253,8 @@ article.header-banner{
    background-color: white;
    width: 310px;
    height: 565px;
-    
+    margin: 0.8em 0.3em;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.205);
 }
 
 #main-topics .news-topics .main-item  p, #main-topics .news-topics .main-item  output{
