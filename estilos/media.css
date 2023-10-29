@@ -1,0 +1,152 @@
+@charset "UTF-8";
+
+
+:root{
+
+    /*Fonts*/
+    --font1: 'lora',verdana,sans-serif;
+    --font2:  'roboto', arial;
+    --font3:  'Spartan', arial;
+
+    /*Backgrounds*/
+    --header-nav: rgba(0, 0, 0, 0.20);
+    --header-info:  rgba(18, 18, 18, 0.88);
+    --footer: #212529;
+
+     /*texts color*/
+    --color1: #495057;
+    --color2: #6C757D;
+    --color3:  #E5E5E5;
+    --coloractived: #AA1C22;
+    
+
+}
+
+/*Phone*/
+
+@media screen and (min-width: 300px) and (max-width: 600px){ 
+
+    /*HEADER */
+
+    #header { 
+        background: url(../public/images/media\ back2.jpeg) no-repeat;
+        background-size: cover;
+        background-color: rgba(0, 0, 0, 0.2);
+        background-blend-mode: color;
+        width: 100%;
+        height: 20%;
+        padding-bottom: 30%;
+    }
+
+   
+     #header .navbar-socials{
+      display: none;
+     }
+
+     #header .navbar-item {
+        display: none;
+       
+     }
+
+     #header .navbar-item ul{
+        display: block;
+        
+     }
+
+     #header .navbar-item ul li {
+        border-top: 1px solid var(--coloractived);
+     }
+
+     #header .navbar-item ul li:hover {
+        background-color: var(--coloractived);
+     }
+
+     #header .navbar-item ul li a:hover{
+        border: none;
+     }
+
+     /*BANNER HEAD*/
+
+     #header .header-banner{
+        width: 40vh;
+        padding: 10px;
+        overflow: hidden;
+     }
+
+     #header .header-banner .header-banner-box {
+        width: 60vh;
+     }
+
+     #header .header-banner h2 {
+        width: 40vh;
+        font-size: 1.2em;
+     }
+
+     #header .header-banner p{
+        width: 50vh;
+        font-size: 0.7em;
+     }
+
+     #header .header-banner .subtopic{
+        display: grid;
+    
+    }
+    
+
+
+       /*BURGUER BUTTON*/
+  
+   
+     #button-menu{
+        display: block;
+        margin: 0 10px;
+     }
+
+     /*PRE-FOOTER*/
+
+    #pre-footer{
+        background: url(../public/images/media\ back\ pre-footer2.jpeg) no-repeat center center;
+        background-size: cover;
+        background-color: rgba(0, 0, 0, 0.3);
+        background-blend-mode: color;
+    }
+
+    #pre-footer .pre-footer-info h1 {
+        width: 10em;
+        font-size: 1.8em;
+        text-align: start;
+    }
+
+    #pre-footer .pre-footer-info p {
+        width: 30em;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.473);
+    }
+
+    /*FOOTER*/
+
+   
+    #footer {
+        background-color: #212529;
+    }
+
+    #footer .footer-box{    
+        padding:50px;   
+        display: list-item;
+        margin: auto;
+        text-align: center;    
+
+    }
+
+    #footer .footer-box h3 { 
+        font-size: 1.3em;
+        padding-top: 40px;
+    }
+
+    #footer .footer-box ul li a {
+
+        font-size: 0.8em;
+    }
+
+  
+   
+}
