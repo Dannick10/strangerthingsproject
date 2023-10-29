@@ -68,6 +68,9 @@ html, body {
    background: url(../public/images/Image.jpg) no-repeat;
    background-size:cover;
    background-attachment: fixed;
+   overflow: hidden;
+
+
     height: auto;
    height: 600px;
    background-color: rgba(0, 0, 0, 0.2);
@@ -298,6 +301,7 @@ article.header-banner{
     background-color: rgba(0, 0, 0, 0.3);
    background-blend-mode: color;
    background-attachment: fixed;
+   overflow: hidden;
    
 }
 

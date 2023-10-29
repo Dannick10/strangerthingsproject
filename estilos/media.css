@@ -35,6 +35,8 @@
         background-blend-mode: color;
       background-attachment: fixed;
         padding-bottom: 30%;
+        overflow: hidden;
+        
     }
 
    
@@ -109,6 +111,7 @@
         background-color: rgba(0, 0, 0, 0.3);
         background-blend-mode: color;
         background-attachment: fixed;
+        overflow: hidden;
     }
 
     #pre-footer .pre-footer-info h1 {
