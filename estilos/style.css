@@ -390,3 +390,12 @@ article.header-banner{
     
  }
 
+ #footer .me{
+    margin: 0 40px;
+ }
+
+ #footer .me img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+ }
