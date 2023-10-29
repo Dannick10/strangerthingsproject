@@ -146,6 +146,36 @@
         font-size: 0.8em;
     }
 
+
+    @media screen and (orientation:portrait){
+        #header .navbar-socials{
+            display: block;
+           }
+      
+           #header .navbar-item {
+              display: block;
+             
+           }
+
+           #button-menu{
+            display: none;
+
+           }
+
+           #header .navbar-item ul{
+            display: flex;
+            
+         }
+
+
+         #header .navbar-item ul li {
+            border-top: none;
+         }
+         
+
+           
+    }
+
   
    
 }
