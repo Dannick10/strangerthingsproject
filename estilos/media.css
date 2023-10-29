@@ -33,7 +33,7 @@
         background-size: cover;
         background-color: rgba(0, 0, 0, 0.2);
         background-blend-mode: color;
-       
+      background-attachment: fixed;
         padding-bottom: 30%;
     }
 
@@ -108,6 +108,7 @@
         background-size: cover;
         background-color: rgba(0, 0, 0, 0.3);
         background-blend-mode: color;
+        background-attachment: fixed;
     }
 
     #pre-footer .pre-footer-info h1 {
