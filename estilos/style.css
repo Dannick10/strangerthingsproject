@@ -23,8 +23,6 @@
 */
 
 ::-webkit-scrollbar{
-    width: 0;
-    height: 0;
    
 }
 
@@ -53,7 +51,7 @@
     margin: 0;
     padding: 0;
     font-family: var(--font2);
-   
+    
 }
 
 html, body { 
