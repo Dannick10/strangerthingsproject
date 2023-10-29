@@ -32,8 +32,8 @@
         background: url(../public/images/media\ back2.jpeg) no-repeat;
         background-size: cover;
         background-color: rgba(0, 0, 0, 0.2);
-        background-blend-mode: color;
-     
+        background-blend-mode: color; 
+         
         padding-bottom: 30%;
              
     }
