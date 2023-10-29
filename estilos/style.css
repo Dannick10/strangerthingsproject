@@ -71,7 +71,7 @@ justify-content: end;
 
 padding: 10px;
 background-color: var(--header-nav);
-
+margin-bottom: 10em;
 } 
 
 #header .header-navbar .navbar-logo h1{
@@ -125,7 +125,6 @@ background-color: var(--header-nav);
 /*HEADER BANNER*/
 
 #header .header-banner{
-   margin-top: 180px;
    padding: 30px;
    background-color:rgba(18, 18, 18, 0.88);
    color: white;
